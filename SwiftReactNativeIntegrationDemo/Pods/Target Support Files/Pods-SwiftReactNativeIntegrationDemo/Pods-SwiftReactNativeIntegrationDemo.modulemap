@@ -1,0 +1,6 @@
+framework module Pods_SwiftReactNativeIntegrationDemo {
+  umbrella header "Pods-SwiftReactNativeIntegrationDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

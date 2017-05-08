@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g6Z-Ed-YZl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="bQt-xd-5z7">
+            <objects>
+                <viewController id="E5C-kS-sjt" customClass="ViewController" customModule="SwiftReactNativeIntegrationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxk-KH-Xwi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ecb-cz-25k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7uW-48-mXK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IR3-rp-yeO">
+                                <rect key="frame" x="86.5" y="294" width="203" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWA-Wu-SaA">
+                                        <rect key="frame" x="21.5" y="0.0" width="159.5" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-MS-VHv">
+                                        <rect key="frame" x="0.0" y="49" width="203" height="30"/>
+                                        <state key="normal" title="Click Here to Open React app"/>
+                                        <connections>
+                                            <action selector="btnTap:" destination="E5C-kS-sjt" eventType="touchUpInside" id="YAz-NG-hJy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IR3-rp-yeO" firstAttribute="centerY" secondItem="7uW-48-mXK" secondAttribute="centerY" id="qzi-Wh-jZ4"/>
+                            <constraint firstItem="IR3-rp-yeO" firstAttribute="centerX" secondItem="7uW-48-mXK" secondAttribute="centerX" id="uvj-Aa-NYe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="392-eY-uUY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkh-LZ-VAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="553"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Djl-T5-rIk">
+            <objects>
+                <viewController id="cpZ-zz-RTP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRc-Fs-jkN"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJy-3m-jje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWc-vB-U88">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdQ-i4-uhg">
+                                <rect key="frame" x="110.5" y="309" width="154.5" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EdQ-i4-uhg" firstAttribute="centerY" secondItem="UWc-vB-U88" secondAttribute="centerY" id="53d-vo-U62"/>
+                            <constraint firstItem="EdQ-i4-uhg" firstAttribute="centerX" secondItem="UWc-vB-U88" secondAttribute="centerX" id="POe-GF-RA4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="U5M-ZL-wBD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAd-Cg-091" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="-103.89805097451276"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TLk-Lk-rP1">
+            <objects>
+                <tabBarController id="g6Z-Ed-YZl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dJj-Vr-ZXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cpZ-zz-RTP" kind="relationship" relationship="viewControllers" id="OH2-a4-7hc"/>
+                        <segue destination="E5C-kS-sjt" kind="relationship" relationship="viewControllers" id="ayh-37-PmB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gij-uH-5oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="225"/>
+        </scene>
+    </scenes>
+</document>
